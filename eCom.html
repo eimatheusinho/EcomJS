@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    <link rel="stylesheet" href="/eCom.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#products">Produtos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>Ecommerce EBAC</h1>
+            <h2>Seja bem vindo!</h2>
+            <p>Encontre aqui seu produto.</p>
+            <a href="#products">
+                <button>Compre agora</button>
+            </a>              
+        </section>
+
+        <section id="products">  
+            <h2>PRODUTOS EM DESTAQUE</h2>
+            <div class="product-grid">
+                <!--Aqui serão inseridos os produtos pelo JS-->
+            </div>
+        </section>
+
+        <div class="line"></div>
+
+        <section class="cart">
+            <h2>Carinho de Compras</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Quantidade</th>
+                        <th>Preço</th>
+                        <th>Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--Aqui serão inseridos os itens do carrinho pelo JS-->
+                </tbody>
+            </table>
+            <p>Total: <span id="total">R$0.00</span></p>
+            <button id="checkout">Pagar</button>
+        </section>
+    </main>
+    <footer id="contato">
+        <p>Email: ebac@gmail.com</p>
+        <p>Telefone: (99)99999-9999</p>
+        <p>&copy; 2024 EBAC Ecommerce v1</p>
+    </footer>
+
+    <script src="/eCom.js"></script>
+</body>
+</html>
