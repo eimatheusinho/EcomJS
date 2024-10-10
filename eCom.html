@@ -4,63 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecommerce</title>
-    <link rel="stylesheet" href="/eCom.css">
+    <link rel="stylesheet" href="styles/eCom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloundflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#products">Produtos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+    <div id="menu-container"></div>
+
+
+    <header id="hero">
+        <h1>Ecommerce EBAC</h1>
+        <h2>Seja bem vindo!</h2>
+        <p>Encontre aqui seu produto.</p>
+        <a href="#products">
+            <button>Compre agora</button>
+        </a>              
     </header>
 
-    <main>
-        <section id="hero">
-            <h1>Ecommerce EBAC</h1>
-            <h2>Seja bem vindo!</h2>
-            <p>Encontre aqui seu produto.</p>
-            <a href="#products">
-                <button>Compre agora</button>
-            </a>              
-        </section>
+    <main class="content" id="content">
 
         <section id="products">  
-            <h2>PRODUTOS EM DESTAQUE</h2>
-            <div class="product-grid">
+            <h2>CURSOS EM DESTAQUE</h2>
+            <p class="products-p">Arraste para ver os cursos!</p>
+            <div id="product-grid" class="owl-carousel">
                 <!--Aqui serão inseridos os produtos pelo JS-->
             </div>
         </section>
-
-        <div class="line"></div>
-
-        <section class="cart">
-            <h2>Carinho de Compras</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Produto</th>
-                        <th>Quantidade</th>
-                        <th>Preço</th>
-                        <th>Subtotal</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!--Aqui serão inseridos os itens do carrinho pelo JS-->
-                </tbody>
-            </table>
-            <p>Total: <span id="total">R$0.00</span></p>
-            <button id="checkout">Pagar</button>
-        </section>
+        
+        <div class="cart-btn">
+            <a href="eCart.html"><button>Carrinho</button></a>
+        </div>
     </main>
+
     <footer id="contato">
-        <p>Email: ebac@gmail.com</p>
-        <p>Telefone: (99)99999-9999</p>
-        <p>&copy; 2024 EBAC Ecommerce v1</p>
+        <p>&copy; 2024 EBAC Ecommerce v2</p>
     </footer>
 
-    <script src="/eCom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/eCar.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#menu-container").load("eMenu.html");
+        });
+      </script>
+    <script src="js/eMenu.js"></script>
+    <script src="js/eCom.js"></script>
+    <script src="https://cdnjs.cloundflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>
 </body>
 </html>

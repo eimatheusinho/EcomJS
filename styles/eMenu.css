@@ -1,0 +1,83 @@
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 256px;
+    background-color: rgb(47, 42, 117);
+    color: antiquewhite;
+    z-index: 1;
+    transform: translateX(-80%);
+    transition: transform 0.3s ease;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu ul li a,
+.toggle-button {
+    display: flex;
+    align-items: center;
+    justify-content: right; 
+    padding: 8px;
+    font-size: 0; 
+    transition: all 0.3s ease;
+}
+
+.menu ul li a i,
+.toggle-button i {
+    font-size: 24px; 
+    transition: all 0.3s ease;
+    padding: 4px;
+}
+
+.toggle-button i {
+    margin-left: 40px;
+}
+
+.menu.is-open ul li a,
+.menu.is-open .toggle-button {
+    justify-content: left;
+    font-size: 20px; 
+}
+
+.menu.is-open ul li a i,
+.menu.is-open .toggle-button i {
+    margin-right: 15px; 
+}
+
+.menu.is-open {
+    transform: translateX(0);
+}
+
+.content {
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.content.is-open {
+    transform: translateX(175px);
+}
+
+.toggle-button {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    color: antiquewhite;
+    cursor: pointer;
+    transition: left 0.3s ease; 
+}
+
+nav ul {
+    flex-direction: column;
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    padding: 5px;
+    color: aliceblue;
+    text-decoration: none;
+}

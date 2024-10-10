@@ -2,37 +2,20 @@ body {
     font-family: Ariel, sans-serif;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
+    background-color: azure;
 }
 
 header {
-    background-color: rgb(32, 27, 58);
-    color: aliceblue;
-    padding: 30px;
     text-align: center;
-    position: fixed;
     width: 100%;
-    margin-left: -3rem;
-}
-
-nav ul {
-    padding: 10px;
-    list-style: none;
-    margin: -8px;
-    display: flex;
-    float: right;
-    gap: 20px;
-}
-
-nav a {
-    color: aliceblue;
-    text-decoration: none;
 }
 
 #hero {
     display: flex;
+    background-color: rgb(94, 87, 189);
     flex-direction: column;
     justify-content: center;
-    background-color: rgb(94, 87, 189);
     text-align: center;
     color: aliceblue;
     height: 100vh;
@@ -67,22 +50,21 @@ nav a {
     color: rgb(94, 87, 189);
     display: flex;
     justify-content: center;
+    margin-top: -3rem;
+    padding-bottom: 1rem;
 }
 
-.product {
-    padding: 20px;
-}
-
-.product-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+.products-p {
+    display: flex;
+    justify-content: center;
+    color: rgb(47, 42, 117);
+    font-weight: bold;
 }
 
 .product {
     background-color: rgb(94, 87, 189);
     padding: 20px;
-    border: 1px solid #ddd;
+    border: 3px solid rgb(47, 42, 117);
     border-radius: 10px;
 }
 
@@ -94,13 +76,13 @@ nav a {
     border-radius: 10px;
     color: #ddd;
     font-weight: bold;
-    padding-left: 10px;
 }
 
 .product img {
     width: 100%;
     height: 200px;
     object-fit: cover;
+    border: 2px solid rgb(47, 42, 117);
     border-radius: 10px;
 }
 
@@ -115,47 +97,21 @@ nav a {
     font-weight: bold;
 }
 
-.line {
-    background-color: rgb(94, 87, 189);
-    height: 2px;
-    width: 80%;
+.cart-btn {
     display: flex;
-    margin-left: 8rem;
+    justify-content: center;
+    margin-top: -3rem;
+    padding-bottom: 1rem;
 }
 
-.cart {
-    padding: 20px;
-}
-
-.cart table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.cart th {
+.cart-btn button {
     background-color: rgb(94, 87, 189);
-    color: #ddd;
-}
-
-.cart th, .cart td {
-    border: 2px solid rgb(94, 87, 189);
-    padding: 10px;
-    text-align: center;
-}
-
-#total {
-    font-weight: bold;
-}
-
-#checkout {
-    background-color: rgb(94, 87, 189);
-    color: #f7f1f1;
     border: none;
-    padding: 10px 20px;
-    font-size: 18px;
+    padding: 20px 60px;
     cursor: pointer;
-    border-radius: 5px;
-    
+    color: #ddd;
+    border-radius: 10px;
+    font-size: larger;
 }
 
 footer {

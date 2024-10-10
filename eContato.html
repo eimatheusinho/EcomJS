@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/eContato.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloundflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+</head>
+<body>
+    <div id="menu-container"></div>
+
+    <main>
+        <section class="contact-section">
+            <h1>Contato</h1>
+            <p>Fale conosco!</p>
+            <form id="contact-form">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+
+            <div class="contact-info">
+                <h2>Informações de contato</h2>
+                <p>Endereço: xxxxxx-xxxxxx-xxxx</p>
+                <p>Telefone: (99)99999-9999</p>
+                <p>Email: xxxxx@xxxx.xxx</p>
+                <p>Horário de atendimento: 00:00 - 00:00</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 EBAC Ecommerce v1</p>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+          $("#menu-container").load("eMenu.html");
+      });
+    </script>
+    <script src="js/eContato.js"></script>
+    <script src="js/eMenu.js"></script>
+    <script src="https://cdnjs.cloundflare.com/ajax/libs/slideout/1.0.1/slideout.min.js"></script>  
+</body>
+</html>
